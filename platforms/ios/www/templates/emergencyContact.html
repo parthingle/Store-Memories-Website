@@ -1,0 +1,47 @@
+<ion-view title="Emergency Contact" hide-back-button="true" id="page7" style="background-color:#FFFFFF;">
+  <ion-content padding="false" class="has-header">
+    <div id="emergencyContact-button-bar7" class="button-bar">
+      <a ui-sref="heartRate" id="emergencyContact-button38" class="button button-dark  button-block icon ion-ios-heart-outline"></a>
+      <a ui-sref="heartMonitor" id="emergencyContact-button39" class="button button-dark  button-block icon ion-ios-lightbulb-outline"></a>
+      <a ui-sref="healthTips" id="emergencyContact-button40" class="button button-dark  button-block icon ion-ios-videocam-outline"></a>
+      <button id="emergencyContact-button41" class="button button-dark  button-block icon ion-alert"></button>
+    </div>
+    <div class="spacer" style="width: 320px; height: 30px;"></div>
+    <div>
+      <img src="img/8ag5It7wQXCGCx5zNMVQ_HeartRate8.png" style="display: block; width: 80%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="list card" id="emergencyContact-card23">
+      <ion-item ng-repeat="item in items"  href="tel:item.contact">{{item.name}}</ion-item>
+    </div>
+    <div class="spacer" style="width: 320px; height: 26px;"></div>
+    <div>
+      <img src="img/ZMkfu3q8Tdmq47WoeypZ_ja4.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+
+    <div class="list card" id="emergencyContact-card21">
+      <!-- <ion-item id="emergencyContact-list-item3">Contact Name</ion-item> -->
+      <form id="emergencyContact-form2" class="list">
+        <label class="item item-input" id="emergencyContact-input3" name="contactName">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Name" id="name2">
+        </label>
+      </form>
+    </div>
+    <div class="list card" id="emergencyContact-card22">
+      <!-- <ion-item id="emergencyContact-list-item7">Contact Number</ion-item> -->
+      <form id="emergencyContact-form3" class="list">
+        <label class="item item-input" id="emergencyContact-input4" name="phoneNumber">
+          <span class="input-label">Contact</span>
+          <input type="text" placeholder="Phone No. " id="contact2">
+        </label>
+      </form>
+    </div>
+    <form id="emergencyContact-form4" class="list">
+      <!-- <ion-toggle toggle-class="toggle-dark" id="emergencyContact-toggle2">Automatic text in emergency</ion-toggle> -->
+      <button id="emergencyContact-button42" class="button button-dark  button-block" ng-click="addContact()">Add Contact</button>
+      <div>
+        <img src="img/a8VdsVlvSICIOsQrufd3_Gd0NDnfQ9WRxKXAaMf2Q_ja3.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

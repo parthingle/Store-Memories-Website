@@ -1,0 +1,63 @@
+<script type="text/javascript" src="../js/canvasjs.min.js"></script>
+
+
+
+
+<ion-view title="Heart Monitor" hide-back-button="true" id="page4" style="background-color:#FFFFFF;">
+    <ion-content padding="false" class="has-header">
+        <div>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="js/chart.js"></script>
+        </div>
+        </div>
+        <div id="heartMonitor-button-bar4" class="button-bar">
+            <a ui-sref="heartRate" id="heartMonitor-button26" class="button button-dark  button-block icon ion-ios-heart-outline"></a>
+            <button id="heartMonitor-button27" class="button button-dark  button-block icon ion-ios-lightbulb"></button>
+            <a ui-sref="healthTips" id="heartMonitor-button28" class="button button-dark  button-block icon ion-ios-videocam-outline"></a>
+            <a ui-sref="emergencyContact" id="heartMonitor-button29" class="button button-dark  button-block icon ion-alert"></a>
+        </div>
+        <button ng-click="anamoly()">Test anamoly</button>
+        <button ng-click="stopAnamoly()">Test anamoly</button>
+
+
+        <div class="spacer" style="width: 320px; height: 30px;"></div>
+        <div>
+            <img src="img/YUfi8wklQreofPj2JHFZ_HeartRate3.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 320px; height: 26px;"></div>
+        <div id="chartContainer" style="height: 300px; width:100%;"></div>
+        <div>
+          <table>
+            <tbody cellpadding="10" cellspacing="10">
+              <tr>
+                <td><img id="best" src="img/best.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;"></td>
+                <td><img id="healthy" src="img/healthy.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;"></td>
+              </tr>
+              <br/>
+              <tr>
+                <td><img id="normal" src="img/normal.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;"></td>
+                <td><img id="need-attention" src="img/need.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;"></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <img id="best" src="img/pjnZb3DR0aknHtncG4CJ_HeartRate4.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;"> -->
+        </div>
+        <!-- <div class="spacer" style="width: 320px; height: 20px;"></div>
+        <div>
+          <img id="healthy" src="img/BsyOmB7mR1GfOMIpCLBP_HeartRate4.png" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 320px; height: 22px;"></div>
+        <div>
+          <img id="normal" src="img/wXsPRAfuQ0uS38ScciZJ_HeartRate4.png" style="display: block; width: 60%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 320px; height: 19px;"></div>
+        <div>
+          <img id="need-attention" src="img/SnA88eXnRS6uoIPxAV5O_HeartRate4.png" style="display: block; width: 50%; height: auto; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 320px; height: 18.9962px;"></div>
+        <div>
+          <img src="img/98EWKgH5Tnmu241W4etA_Gd0NDnfQ9WRxKXAaMf2Q_ja3.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </div> -->
+  </ion-content>
+</ion-view>
